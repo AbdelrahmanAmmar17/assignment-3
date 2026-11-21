@@ -1,0 +1,15 @@
+void main() {
+  List<int> numbers = [8, 0, 1, 5];
+  int result = getMin(numbers);
+  print(result);
+}
+
+int getMin(List<int> numbers) {
+  int min = numbers[0];
+  for (int i = 1; i < numbers.length; i++) {
+    if (numbers[i] < min) {
+      min = numbers[i];
+    }
+  }
+  return min;
+}
